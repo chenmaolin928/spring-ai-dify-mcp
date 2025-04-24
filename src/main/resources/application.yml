@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      base-url: ${OPENAI_BASE_URL:https://api.openai.com}
+      
+dify:
+  api:
+    base-url: ${DIFY_API_URL:http://localhost:5000}
+    api-key: ${DIFY_API_KEY}
+    
+logging:
+  level:
+    org.springframework.ai: DEBUG
+    com.example.springaidifymcp: DEBUG
